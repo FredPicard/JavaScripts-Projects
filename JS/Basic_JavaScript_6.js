@@ -40,16 +40,16 @@ function Pet(){
 document.getElementById("New_and_This").innerHTML=
 "Spike is " + Spike.Age + " year old " + Spike.Color +   " "  +  Spike.Breed + " with " + Spike.Coat;
 }
-
+var counter = 0;
 function add_function(){
-document.getElementById("adding").innerHTML = add();
-function add() {
-  var counter = 0;
-  function plus() {counter += 1;}
-  plus();  
-  return counter; 
+    document.getElementById("adding").innerHTML = add();
+    function add() {
+        //var counter = 0;
+        function plus() {counter += 1;}
+        plus();  
+        return counter; 
 
-}
+    }
 }
 
    

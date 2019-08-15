@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Page Title</title>
+    
+    <link rel="stylesheet" type="text/css" href="CSS/Basic_JavaScript_9.css">
+    <script src="JS/Basic_JavaScript_9.js"></script>
+
+     </head>
+      <body>
+        <!-- Alarm timer  -->
+         <p>How many seconds would you like to set your alarm for?</p>
+        <input id="seconds" value="" />
+        <button onclick="countdown()">Click here</button>
+        <p id="timer"></p> 
+        <!-- Alarm timer end -->
+
+        <!-- Slideshow -->
+        <div class = "slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+            <img src="Images/images_1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+              <img src="Images/images_2.jpg" style="width:100%">
+              <div class="text">Rainbow sunset</div>
+          </div>
+          <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+                <img src="Images/images_3.jpg" style="width:100%">
+                <div class="text">Sandy sunset</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                  <img src="Images/images_4.jpg" style="width:100%">
+                  <div class="text">Weird bridge to No where sunset</div>
+              </div>
+              <div class="mySlides fade">
+                  <div class="numbertext">5 / 6</div>
+                    <img src="Images/images_5.jpg" style="width:100%">
+                    <div class="text">Beach Sunset</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                      <img src="Images/images_6.jpg" style="width:100%">
+                      <div class="text">Sunset</div>
+                  </div>
+
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>  
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                   </div>
+
+
+        </body>
+        </html> 
