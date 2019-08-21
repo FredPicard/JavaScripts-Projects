@@ -8,7 +8,7 @@ const Calculator = {
 
     operator: null
 
-};
+}
 
 function Input_Digit(digit) {
     const {Display_Value, Wait_Second_Operand } = Calculator;
@@ -65,7 +65,7 @@ function Calculator_Reset() {
 
 function Update_Display() {
     const display = document.querySelector('.calculator-screen');
-    display_value = Calculator.Display_Value;
+    display.value = Calculator.Display_Value;
 
 }
 
