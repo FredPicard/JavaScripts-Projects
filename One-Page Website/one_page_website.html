@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hair Salon</title>
+
+</head>
+<body>
+<link rel="stylesheet" type:"text/css" href="one_page_website.css">
+<h1><center>Welcome To DeGuire Salon!</center></h1>
+
+		<!--NAV -->
+	<div>
+		<div>
+			<center>
+			<ul>
+			 
+			   <a href="#home" id="link">HOME</a>
+				<a href="#gallery">GALLERY</a>
+				<a href="#contact">APPOINTMENTS</a>
+			 
+			</ul>
+			</center>
+		 </div>
+	   </div>
+	<!--END NAV-->
+		<!--Video Container-->
+		<center>
+			<div>
+			<video autoplay="true" controls="controls" controlslist="nodownload" data-alt="Stock Video Clip Stock Footage Video" loop="true" src="https://media.istockphoto.com/videos/hair-blowout-hd-video-video-id472833315"></video>
+			
+			</div>
+		</center>
+			<!--End Vidoe Container-->
+	</div>
+	<!
+	<!--HOME-->
+	<div id="home">
+		<div>
+			<div>
+			    <span><center><h1>The Ultimate Salon Experience</h1></center></span>
+			</div>
+		</div>
+	</div>
+	<!--END HOME-->
+	
+	<!--GALLERY-->
+	<section>
+		<center>
+			<div id="gallery">
+			<h1>Gallery</h1>
+			</center>
+			<div>
+					<div class="row">
+							<div class="column">
+							  <img src="./Images/Thumb/thumb_1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="./Images/Thumb/thumb_2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="./Images/Thumb/thumb_3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="./Images/Thumb/thumb_4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+							</div>
+							<div class="column">
+							  <img src="./Images/Thumb/thumb_5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+						  <div class="column">
+							 <img src="./Images/Thumb/thumb_6.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+						 </div>  
+							
+						  </div>
+						  
+						  <!-- The Modal/Lightbox -->
+						  <div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+						  
+							  <div class="mySlides">
+								<div class="numbertext">1 / 4</div>
+								<img src= "./Images/Thumb/thumb_1.jpg" style="width:80%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">2 / 6</div>
+								<img src="./Images/Thumb/thumb_2.jpg" style="width:80%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">3 / 6</div>
+								<img src="./Images/Thumb/thumb_3.jpg" style="width:80%">
+							  </div>
+						  
+							  <div class="mySlides">
+								<div class="numbertext">4 / 6</div>
+								<img src="./Images/Thumb/thumb_4.jpg" style="width:80%">
+							  </div>
+							  <div class="mySlides">
+								<div class="numbertext">5 / 6</div>
+								<img src="./Images/Thumb/thumb_5.jpeg" style="width:80%">
+								  </div>
+							  <div class="mySlides">
+								<div class="numbertext">6 / 6</div>
+								<img src="./Images/Thumb/thumb_6.jpg" style="width:80%">
+							  </div>
+						  
+							  <!-- Next/previous controls -->
+							  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+						  
+							  <!-- Caption text -->
+							  <div class="caption-container">
+								<p id="caption"></p>
+							  </div>
+						  
+							  <!-- Thumbnail image controls -->
+							  <div class="column">
+								<img class="demo" src="./Images/Thumb/thumb_1.jpg" onclick="currentSlide(1)" alt="Hair Coloring">
+							  </div>
+						  
+							  <div class="column">
+								<img class="demo" src="./Images/Thumb/thumb_2.jpg" onclick="currentSlide(2)" alt="Wash">
+							  </div>
+						  
+							  <div class="column">
+								<img class="demo" src="./Images/Thumb/thumb_3.jpg" onclick="currentSlide(3)" alt="Style">
+							  </div>
+						  
+							  <div class="column">
+								<img class="demo" src= "./Images/Thumb/thumb_4.jpg"onclick="currentSlide(4)" alt="Precison Cuts">
+							  </div>
+							  <div class="column">
+									<img class="demo" src= "./Images/Thumb/thumb_5.jpeg"onclick="currentSlide(5)" alt="Up-Do's">
+							</div>
+							<div class="column">
+									<img class="demo" src= "./Images/Thumb/thumb_6.jpg"onclick="currentSlide(6)" alt="Mens' Grooming">
+							</div>
+						  
+						  </div>
+			
+		  
+			 
+</div>
+</section>
+ <!--END GALLERY-->
+ 
+ <!--RSVP-->
+ <section>
+
+	<div id="contact">
+		<div>
+			<h1>Appointments</h1>
+			<div>
+				<h2><span>Your New Hair Is Here For You.</span>
+					<br />Book Your Appoinment Today!
+				</h2>
+				<p>
+				Please provide us with your basic contact information along with preferred Date and Times.
+				</p>
+				<div>
+				
+					<form section="" method="post">
+					
+						<input class="rsvp" type="text" value="First Name">
+						<input class="rsvp" type="text" value="Last Name">
+						<input class="rsvp" type="text" value="Email Address">
+						<input class="rsvp" type="text" value="Phone Number">
+						<input class="rsvp" type="text" value="Service Requesting">
+						
+						<ul>
+						<input type="date" type="text" value="Date">
+						<input type="time" name-"usr_time">
+					</ul>
+						
+					<div class="form-spacer">
+						<label class="terms">Additonal Info</label>
+						</div>
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>
+<!--END RSVP>
+
+<!--FOOTER-->
+<div>
+	
+	www.Deguire Studio LLC, &copy2019
+
+</div>
+<!--END FOOTER-->
+<script src="JS/one_page_website.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
