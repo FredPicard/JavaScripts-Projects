@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Head -->
+        <head>
+            <meta charset="UTF-8">
+            <title>Fred Picard </title>
+            <link rel="stylesheet" type="text/css" href="Fred_Portfolio.css">
+            <script src="JS/Portfolio.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+          </head> 
+    
+    <!-- Body -->
+<body class="Background">
+<script>
+  document.body.className += ' fade-out';
+  $(function() {
+    $('body').removeClass('fade-out');
+  }
+  );
+
+  </script>
+<!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a onclick="openForm()">Contact</a>
+        </div>
+
+        <div class="btn cancel" onclick="closeForm()">
+<!--Home-->
+       <div id="Home">
+         <br>
+         <br>
+
+<!--Video-->
+    
+        <video autoplay muted loop id="typing_code_video"><!--Makes the video play automatically, on a loop and with no sound---->
+           <source src="Video/typing_code.mp4" type="video/mp4">
+           Your browser does not support HTML5 video> <!--Display message if video fails to run--> 
+         </video>
+      </div>
+
+<!--Video text-->
+
+<div class="Video_Text">
+   <h1 style="color: whitesmoke;"> Fred Picard's Portfolio</h1>
+   
+     <p>
+         <strong>
+            <center>
+                   <q>Learn from yesterday,
+                    live for today,
+                    hope for tommorow.
+                    The important thing is not to stop questioning.
+                 </q>
+                 <br>-Albert Einstein<br>
+                 <br>
+                  My name is Fred Picard. Welcome to my portfolio website.<br> On it, I will tell you about my background and experience.
+                 <br>Thank you for stopping by and enjoy!
+                </center>
+              </strong>
+            </p>
+         </div>
+
+         <div id="Slideshow">
+           <div id="Slideshow_Background">
+             <div id="Slideshow_Container">
+
+              <div class="mySlides fade" style="display: block;">
+                <div class="Slide_number"> 1 / 6</div>
+                <img class="Slide_Show_Images"  src="Stylesheet/Me.jpg" style="width:100%">
+                <div class="text">I'm available to assist you on your project!</div>
+        </div>
+            <div class="mySlides fade">
+                <div class="Slide_number"> 2/ 6</div>
+                <img class="Slide_Show_Images"  src="Stylesheet/HTML_CSS_and_JavaScript.jpeg" style="width:100%"> 
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="Slide_number"> 3 / 6</div>
+            <img class="Slide_Show_Images"  src="Stylesheet/Python.png" style="width:100%">
+            <div class="text">the popular programming language Python,</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="Slide_number"> 4 / 6</div>
+        <img class="Slide_Show_Images"  src="Stylesheet/C_Sharp_and_Dot_NET.png" style="width:100%">
+        <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+</div>
+<div class="mySlides fade">
+    <div class="Slide_number"> 5 / 6</div>
+    <img class="Slide_Show_Images"  src="Stylesheet/SQL_and_Database.jpg" style="width:100%">
+    <div class="text">back end development, databases and SQ</div>
+</div>
+<div class="mySlides fade">
+    <div class="Slide_number"> 6 / 6</div>
+    <img class="Slide_Show_Images"  src="Stylesheet/Coding_1.jpg" style="width:100%">
+    <div class="text">
+      <a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>    
+    </div>
+</div>
+
+
+  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+  showSlides(slideIndex);
+  function plusSlides(n) {
+    showSlides(slideIndex +=n);
+  }
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+    }
+     slides[slideIndex-1].style.display = "block";  
+	   dots[slideIndex-1].className += " active";
+	 }
+ </script>
+
+
+<!--About section-->
+      <div class="Row" id="About">
+        <div class="Column_2"><!--Left column-->
+            <img src="Images/laptop.jpg" alt="Picture of laptop">
+        </div>
+
+      <div class="Column_1"> <!--Right column-->
+        <h1>About</h1>
+            <p>I am a software developer who loves to problem solve. I enjoy hiking and traveling.
+                <br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" 
+                target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced
+                 in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.<br><br>
+                 I am a full-stack developer and would love to work with you on your project. <a href="#Contact"</a> me below!
+                 </p>
+          </div>
+     </div>
+
+<!--GitHub section-->
+   <div class="Row" id="GitHub">
+         <div class="Column_1"> <!--Left column-->
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:<br>
+             <center><a href="https://github.com/the-tech-academy" target="_blank">The Tech Academy GitHub</a></center></p>
+         </div>
+
+         <div class="Column_2"> <!--Right column-->
+            <a href="https://github.com/the-tech-academy" target="_blank"><img src="Images/GitHub.png" alt="GitHub"></a>
+        </div>
+      </div>
+     </div>
+     
+     
+     <!--Contact section-->
+     <div id="Contact">
+        <!-- <button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+        <div class="form-popup" id="myForm" style="display: block;"></div> -->
+        <button class="open-button" onclick="openForm()">Contact</button>
+
+      <div class="form-popup" id="myForm">
+      <form action= "/action_page.php" class= "form-container">
+           <h1>Contact</h1>
+           <label for="name"><b>Name</b></label>
+           <input type="text" placeholder="Type your name here" name="name" required>
+       <label for="phone"><b>Phone</b></label>
+           <input type="text" placeholder="Enter your phone number here" name="phone">
+        <label for="email"><b>Email</b></label>		
+           <input type="text" placeholder="Type your email address here" name="email" required>
+       <label for="message"><b>Message</b></label>
+           <input type="text" placeholder="Type your message here" name="message">
+    
+       <button type="submit" class="btn">SUBMIT</button>
+       <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+       </form>
+      </div>
+     </div>
+   
+ 
+
+
+   <!--Footer section-->
+
+   <footer>
+       <p>
+           <center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+
+       </p>
+   </footer>
+   
+  
+    
+
+   </body>
+</html>
